@@ -187,6 +187,7 @@ a:hover {
   border-radius: var(--radius);
   padding: 1.25rem 1.5rem;
   transition: border-color 0.2s;
+  cursor: pointer;
 }
 
 .post-card:hover {
@@ -276,6 +277,177 @@ a:hover {
   background: var(--color-surface);
   padding: 0.15rem 0.4rem;
   border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+/* ── Post View ── */
+.post-view {
+  max-width: 720px;
+}
+
+.back-link {
+  display: inline-block;
+  background: none;
+  border: none;
+  color: var(--color-accent);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  font-family: inherit;
+  transition: color 0.2s;
+}
+
+.back-link:hover {
+  color: var(--color-accent-hover);
+}
+
+.post-view-header {
+  margin-bottom: 2rem;
+}
+
+.post-view-header h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0.35rem 0 0.5rem;
+  line-height: 1.3;
+}
+
+.post-view-summary {
+  color: var(--color-text-muted);
+  font-size: 1rem;
+}
+
+/* ── Prose (markdown content) ── */
+.prose h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 2rem 0 0.75rem;
+}
+
+.prose h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 1.75rem 0 0.6rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.prose h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.prose p {
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+
+.prose ul,
+.prose ol {
+  margin: 0.5rem 0 1rem 1.5rem;
+  color: var(--color-text);
+}
+
+.prose li {
+  margin-bottom: 0.3rem;
+}
+
+.prose strong {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.prose a {
+  color: var(--color-accent);
+}
+
+.prose a:hover {
+  color: var(--color-accent-hover);
+}
+
+.prose pre {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.prose code {
+  font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+  font-size: 0.85em;
+}
+
+.prose :not(pre) > code {
+  background-color: var(--color-surface);
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  border: 1px solid var(--color-border);
+}
+
+.prose blockquote {
+  border-left: 3px solid var(--color-accent);
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  color: var(--color-text-muted);
+  background: var(--color-surface);
+  border-radius: 0 8px 8px 0;
+}
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.prose th,
+.prose td {
+  border: 1px solid var(--color-border);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+.prose th {
+  background-color: var(--color-surface);
+  font-weight: 600;
+}
+
+.prose hr {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: 2rem 0;
+}
+
+/* Mermaid diagrams */
+.mermaid-diagram {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  overflow-x: auto;
+  text-align: center;
+}
+
+.mermaid-diagram svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.code-block {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  overflow-x: auto;
+  margin: 1rem 0;
   font-size: 0.85rem;
 }
 
