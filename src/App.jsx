@@ -1,5 +1,4 @@
-import Header from './components/Header'
-import About from './components/About'
+import Sidebar from './components/Sidebar'
 import Posts from './components/Posts'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
@@ -7,12 +6,13 @@ import Footer from './components/Footer'
 function App() {
   return (
     <div className="app">
-      <Header />
-      <main>
-        <About />
-        <Posts />
-        <Projects />
-      </main>
+      <div className="layout">
+        <Sidebar />
+        <main className="content">
+          <Posts />
+          <Projects />
+        </main>
+      </div>
       <Footer />
     </div>
   )
