@@ -1,4 +1,4 @@
-const skills = ['JavaScript', 'React', 'Node.js', 'Python', 'Git', 'CSS']
+const skills = ["LangGraph", "LangChain", "Agents", "FastMCP", "Kubernetes", "Docker", "Python", "Sklearn", "REST", "Django", "OAuth", "GraphQL", "OpenAPI", "AWS Cloud", "Chainlit"]
 
 function Sidebar() {
   return (
@@ -6,8 +6,8 @@ function Sidebar() {
       <div className="sidebar-sticky">
         <div className="sidebar-header">
           <div className="avatar">A</div>
-          <h1>Atwolf</h1>
-          <p className="tagline">Developer &amp; Creator</p>
+          <h1>Aakash Tammana</h1>
+          <p className="tagline">AI Engineer &amp; Creator</p>
         </div>
 
         <nav className="nav">
@@ -18,12 +18,11 @@ function Sidebar() {
         <div className="about">
           <h2>About</h2>
           <p>
-            Passionate developer who loves building things for the web. I enjoy
-            working with modern technologies and exploring new ideas.
+            Developed across a variety of tech stacks and domains, including Python, Javascript, Typescript, React.
+            Currently, I'm focused on building AI-powered solutions.
           </p>
           <p>
-            When I&apos;m not coding, you can find me reading, exploring open
-            source projects, or learning something new.
+            I like listening to LitRPGs, playing video games, and criticizing my own code.
           </p>
         </div>
 
